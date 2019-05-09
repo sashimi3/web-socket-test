@@ -1,7 +1,4 @@
-#!/bin/bash
-apt-get install nodejs npm
-ln -s /usr/bin/nodejs /usr/local/bin/node
-npm config set registry http://registry.npmjs.org/
+#!/bin/sh
 npm install ws
 
 cat << EOS > server.js

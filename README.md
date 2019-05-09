@@ -1,4 +1,4 @@
-# ksdn117/web-socket-test
+# web-socket-test
 Docker-image for WebSocket connectivity test.
 
 ## How to
@@ -9,8 +9,8 @@ $ docker run -p 8010:8010 --name web-socket-test ksdn117/web-socket-test
 
 ### Connect to container with WebSocket
 ```bash
-$ sudo npm install wscat
-$ ./node_modules/ws/bin/wscat --connect ws://$(CONTAINER_HOST_IP_ADDRESS):8010
+$ npm install wscat
+$ wscat --connect ws://$(CONTAINER_HOST_IP_ADDRESS):8010
 
 connected (press CTRL+C to quit)
 > Hello world

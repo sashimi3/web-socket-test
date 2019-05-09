@@ -1,5 +1,6 @@
-FROM node:latest
-MAINTAINER	ksdn117 <ksdn117@gmail.com>
+FROM node:alpine
+
+LABEL maintainer="ksdn117@gmail.com"
 
 ADD run.sh /run.sh
 CMD ["/run.sh"]
