@@ -1,5 +1,4 @@
 #!/bin/sh
-npm install ws
 
 cat << EOS > server.js
 console.log("Server started");
